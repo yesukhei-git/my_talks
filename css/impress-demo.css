@@ -772,6 +772,14 @@ text-align: center;
     transition:         opacity 1s 5s,         transform 0.5s 4.5s;
 }
 
+window.addEventListener("mousedown", handleClick, false);
+window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+function handleClick(e) {
+	e.preventDefault();
+	if(e.button === 0) Reveal.next();
+	if(e.button === 2) Reveal.prev();
+}
 /*
     That's all I have for you in this file.
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
