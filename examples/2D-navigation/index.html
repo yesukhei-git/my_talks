@@ -59,10 +59,10 @@
 
 
 
-<div id="impress" data-transition-duration="1000"      data-width="1024"
-    data-height="768"
-    data-max-scale="0.6"
-    data-min-scale="0.1">
+<div id="impress" data-transition-duration="1000"      data-width="1624"
+    data-height="1200"
+    data-max-scale="0.7 "
+    data-min-scale="0.4" data-perspective="1000" >
 
     <div class="step" data-scale="2" data-x="00" data-y="-100">
         <h1><br><br><br>
@@ -75,7 +75,7 @@
 
     </div>
 
-    <div id="contents" class="step  " data-x="-100" data-y="2200" data-scale="1.5">
+    <div id="contents" class="step  " data-x="-100" data-y="2200" data-scale="1.0">
       <h1>Table of Contents</h1>
       <ul>
           <li><a href="#step-1">Overview/Motivation</a></li>
@@ -113,7 +113,7 @@
     <!-- Ice cream slides (3) -->
     <div id="Ov1" class="step" data-x="2000" data-y="2000"
          data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
-         data-goto-next-list="contents Ov2 contents decomp1">
+         data-goto-next-list="contents Ov2 contents decomp1" data-scale="1.0">
         <h1>Overview/Motivation</h1>
         <h3>Intrinsic Alignment (IA)</h3>
 
@@ -163,7 +163,7 @@
 
     <div id="Ov3" class="step" data-x="2000" data-y="4800"
          data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
-         data-goto-next-list="Ov2 decomp1 contents bulge-disc-ia">
+         data-goto-next-list="Ov2  who contents bulge-disc-ia"   data-scale="1" >
         <h1>Overview/Motivation</h1>
         <h3>Simulation-based Inference</h3>
 
@@ -180,6 +180,29 @@
             <li><a href="#step-1">Quantification of those biases/uncertainties</a></li>
             </ul>  </ul>
             <li><a href="#step-1">New ML could help, more on next slides</a></li>
+    </div>
+
+
+    <div id="who" class="step" data-rel-x="0" data-rel-y="1600"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="icecream-con decomp1 icecream applepie">
+        <h1> Wait! Who is this guy? </h1>
+          <font size="+20"> <li>Currently finishing my 4th in PhD program</li>
+        <li>Doing a 6 year PhD due to mishaps in my ealy years as a PhD student</li>
+        <li>Plan to Graduate in 2024</li>
+
+        <ul>
+        <li><a href="#step-1">Current Academic record in Astro/Cosmo:</a></li>
+        <ul>
+        <li><a href="#step-10"> 2 published papers </a></li>
+        <li><a href="#step-10"> 1 full paper + 1 short paper under review </a></li>
+        <li><a href="#step-1">   2 new papers (+1 short) since last annual review</a></li>
+        </ul>  </ul>
+
+        <li>Plan to Graduate in 2024</li>
+        <li>Plan to apply for Post-doc in fall 2023</li>
+
+        </font>
     </div>
 
 
@@ -440,26 +463,21 @@
 
     </div>
 
-    <div id="future" class="step" data-x="10000" data-y="2000"
+    <div id="summary" class="step" data-x="10000" data-y="2000"
          data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
          data-goto-next-list="icecream-con crisps-pro icecream applepie">
-        <h1> Future Outlook </h1>
-        <li>Robust Simulation Based Inference: SBI can be used for precise cosmological inference
-     that will unlock the information in weak lensing surveys</li>
-  <ul>
-    <li>Neural Density Estimators</li>
+         <h1>Summary of my PhD academic record</h1>
 
-      <ul>
-          <li>Domain Adaptation techniques   </li>
-          <li>Contrastive learning</li>
-          <li>  Iterative training methods <br> </li>
-      </ul>
-      <br>
-      <li>Improving Image Generation/Simulation  with Barnabas Poczos</li>
- </ul>
+         <ul>
+           <li>So far 3 complete projects: either published or submitted for publication</li>
+           <li>Currently working on DDM for SO(3)</li>
+           <li>A side project with Prof. Shafer</li>
+           <li>Few side projects with undergraduates</li>
+           <li>Few future ideas on applying novel ML methods to SBI, Mock catalog/image generation</li>
+             <ul>
     </div>
 
-    <div id="side" class="step" data-rel-x="0" data-rel-y="600"
+    <div id="side" class="step " data-rel-x="0" data-rel-y="600"  data-rotate-x="-20" data-rotate-y=" 0"
          data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
          data-goto-next-list="icecream-con crisps-pro icecream applepie">
         <h1> Side projects </h1>
@@ -473,22 +491,38 @@
 
 
 
-    <div id="conclusion" class="step" data-rel-x="0" data-rel-y="400">
-        <h1>Summary of my PhD academic record</h1>
-
+    <div id="future" class="step" data-rel-x="0" data-rel-y="400"
+     data-rotate-x="-30" data-rotate-y=" 0"
+     data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+     data-goto-next-list="icecream-con end icecream applepie">
+      <h1> Future Outlook </h1>
+              <li>Robust Simulation Based Inference: SBI can be used for precise cosmological inference
+           that will unlock the information in weak lensing surveys</li>
         <ul>
-          <li>So far 3 complete projects: either published or submitted for publication</li>
-          <li>Currently working on DDM for SO(3)</li>
-          <li>A side project with Prof. Shafer</li>
-          <li>Few side projects with undergraduates</li>
-          <li>Few future ideas on applying novel ML methods to SBI, Mock catalog/image generation</li>
+          <li>Neural Density Estimators</li>
 
             <ul>
-        <!-- <p style="font-size: small; position: absolute; bottom: 30px; left: 300px;" id="image-credits"
-        >Image credits: <a href="https://www.flickr.com/photos/reimagingerica/35535918670">reimagingerica@Flickr</a>,
-                        <a href="https://www.flickr.com/photos/mixedmolly/6636957665">mixedmolly@Flickr</a>,
-                        <a href="https://www.flickr.com/photos/stevepj2009/6296334551">stevepj2009@Flickr</a> </p> -->
+                <li>Domain Adaptation techniques   </li>
+                <li>Contrastive learning</li>
+                <li>  Iterative training methods <br> </li>
+            </ul>
+            <br>
+            <li>Improving Image Generation/Simulation  with Barnabas Poczos</li>
+       </ul>
+       <br>
+
+      <p id="end" class="fly-in fly-out" style="transition-delay: 10s">
+       <font size="+20">  What do the committee members think about these
+           future research directions?  </font>  </p>
+<br>
+           <p id="end" class="fly-in fly-out" style="transition-delay: 13s">
+            <font size="+20">  Any advice to achieve my goals?  </font>  </p>
+
     </div>
+
+
+
+
 
     <div id="overview" class="step" data-x="5000" data-y="4000" data-scale="4" style="pointer-events: none;">
 

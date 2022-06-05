@@ -165,7 +165,8 @@ a:focus {
 
 .step {
     position: relative;
-    width: 900px;
+    width: 1024;
+    height: 768;
     padding: 40px;
     margin: 20px auto;
 
@@ -215,8 +216,10 @@ a:focus {
 .slide {
     display: block;
 
-    width: 1100px;
-    height: 700px;
+    width: 1024;
+    height: 768;
+
+
     padding: 10px 30px;
 
     background-color: rgb(7, 5, 54);
